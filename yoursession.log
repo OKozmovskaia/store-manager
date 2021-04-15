@@ -1,0 +1,195 @@
+Script started on Thu Apr 15 15:03:12 2021
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Joismagilova@MacBook-Air-Olga OlgaStoreManager % [K[?2004hnpx react-native start[?2004l
+[97D[2K[34m                                                      [39m
+[34m                        #######                       [39m
+[34m                   ################                   [39m
+[34m                #########     #########               [39m
+[34m            #########             ##########          [39m
+[34m        #########        ######        #########      [39m
+[34m       ##########################################     [39m
+[34m      #####      #####################       #####    [39m
+[34m      #####          ##############          #####    [39m
+[34m      #####    ###       ######       ###    #####    [39m
+[34m      #####    #######            #######    #####    [39m
+[34m      #####    ###########    ###########    #####    [39m
+[34m      #####    ##########################    #####    [39m
+[34m      #####    ##########################    #####    [39m
+[34m      #####      ######################     ######    [39m
+[34m       ######        #############        #######     [39m
+[34m         #########        ####       #########        [39m
+[34m              #########          #########            [39m
+[34m                  ######### #########                 [39m
+[34m                       #########                      [39m
+[34m                                                      [39m
+[34m                                                      [39m
+[97D[2K[34m[1m                    Welcome to Metro![22m[39m
+[34m[1m[22m[39m[2m              Fast - Scalable - Integrated[22m
+[2m[22m
+[2m[22m[0m[0m
+[0m[0m
+[0mTo reload the app press "r"[0m
+[0mTo open developer menu press "d"[0m
+
+[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(0/1)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(0/1)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(0/1)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(1/103)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(1/103)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/106)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/106)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/130)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/132)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/132)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/132)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/147)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/162)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/162)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/193)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/193)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/227)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/227)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(2/227)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 0.0% [22m[2m(3/292)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/312)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/312)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/312)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/362)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/362)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/362)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(33/362)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(34/427)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(34/427)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [47m[37m░░░░░░░░░░░░░░░░[39m[49m[1m 1.1% [22m[2m(34/427)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(168/442)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(168/442)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(168/442)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(173/481)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(173/481)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(173/481)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(187/525)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 14.4% [22m[2m(187/525)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓[49m[39m[47m[37m░░░░░░░░░░░░░░[39m[49m[1m 15.8% [22m[2m(209/525)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░░[39m[49m[1m 28.4% [22m[2m(300/563)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░░[39m[49m[1m 28.4% [22m[2m(300/563)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░░[39m[49m[1m 28.4% [22m[2m(300/563)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░░[39m[49m[1m 29.5% [22m[2m(312/574)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓[49m[39m[47m[37m░░░░░░░░░░░░[39m[49m[1m 29.5% [22m[2m(312/574)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░░░[39m[49m[1m 50.6% [22m[2m(434/610)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░░░[39m[49m[1m 50.6% [22m[2m(434/610)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.3% [22m[2m(502/631)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.3% [22m[2m(502/631)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░░░[39m[49m[1m 63.3% [22m[2m(502/631)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 77.6% [22m[2m(576/654)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 77.6% [22m[2m(576/654)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 80.8% [22m[2m(588/654)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░░░░[39m[49m[1m 80.8% [22m[2m(588/654)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/657)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/658)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/658)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/659)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/660)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/660)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(641/660)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(643/663)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(643/663)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(644/663)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(644/664)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(644/664)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(644/664)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(644/664)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/666)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/667)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/667)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/668)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/669)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/669)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(646/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(647/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(647/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(648/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(648/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.2% [22m[2m(648/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.3% [22m[2m(654/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.3% [22m[2m(654/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 95.3% [22m[2m(654/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 96.2% [22m[2m(657/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 96.4% [22m[2m(658/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 96.4% [22m[2m(658/670)[22m[97D[2K[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[47m[37m░[39m[49m[1m 96.7% [22m[2m(659/670)[22m[97D[2K[32m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m 
+
+[33m[7m[1m BUNDLE [22m[27m[39m[0m[2m ./[22m[0m[1mindex.js[22m [32m[42m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓[49m[39m[1m 100.0% [22m[2m(670/670)[22m[97D[2K[97D[2K[7m[37m[1m LOG [22m[39m[27m Running "OlgaStoreManager" with {"rootTag":1}
+[97D[2K[7m[31m[1m ERROR [22m[39m[27m ReferenceError: Can't find variable: Text
+
+This error is located at:
+    in InstagramAuth (at SceneView.tsx:122)
+    in StaticContainer
+    in EnsureSingleNavigator (at SceneView.tsx:114)
+    in SceneView (at useDescriptors.tsx:153)
+    in RCTView (at View.js:34)
+    in View (at CardContainer.tsx:245)
+    in RCTView (at View.js:34)
+    in View (at CardContainer.tsx:244)
+    in RCTView (at View.js:34)
+    in View (at CardSheet.tsx:33)
+    in CardSheet (at Card.tsx:573)
+    in RCTView (at View.js:34)
+    in View (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at Card.tsx:555)
+    in PanGestureHandler (at GestureHandlerNative.tsx:13)
+    in PanGestureHandler (at Card.tsx:549)
+    in RCTView (at View.js:34)
+    in View (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at Card.tsx:544)
+    in RCTView (at View.js:34)
+    in View (at Card.tsx:538)
+    in Card (at CardContainer.tsx:206)
+    in CardContainer (at CardStack.tsx:623)
+    in RNSScreen (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at src/index.native.tsx:127)
+    in Screen (at Screens.tsx:74)
+    in MaybeScreen (at CardStack.tsx:616)
+    in RNSScreenContainer (at src/index.native.tsx:165)
+    in ScreenContainer (at Screens.tsx:50)
+    in MaybeScreenContainer (at CardStack.tsx:498)
+    in CardStack (at StackView.tsx:462)
+    in KeyboardManager (at StackView.tsx:458)
+    in RNCSafeAreaProvider (at SafeAreaContext.tsx:76)
+    in SafeAreaProvider (at SafeAreaProviderCompat.tsx:42)
+    in SafeAreaProviderCompat (at StackView.tsx:455)
+    in GestureHandlerRootView (at GestureHandlerRootView.android.tsx:26)
+    in GestureHandlerRootView (at StackView.tsx:454)
+    in StackView (at createStackNavigator.tsx:87)
+    in StackNavigator (at App.js:15)
+    in EnsureSingleNavigator (at BaseNavigationContainer.tsx:409)
+    in BaseNavigationContainer (at NavigationContainer.tsx:91)
+    in ThemeProvider (at NavigationContainer.tsx:90)
+    in NavigationContainer (at App.js:14)
+    in App (at renderApplication.js:47)
+    in RCTView (at View.js:34)
+    in View (at AppContainer.js:107)
+    in RCTView (at View.js:34)
+    in View (at AppContainer.js:134)
+    in AppContainer (at renderApplication.js:40)
+[97D[2K[7m[31m[1m ERROR [22m[39m[27m ReferenceError: Can't find variable: Text
+
+This error is located at:
+    in InstagramAuth (at SceneView.tsx:122)
+    in StaticContainer
+    in EnsureSingleNavigator (at SceneView.tsx:114)
+    in SceneView (at useDescriptors.tsx:153)
+    in RCTView (at View.js:34)
+    in View (at CardContainer.tsx:245)
+    in RCTView (at View.js:34)
+    in View (at CardContainer.tsx:244)
+    in RCTView (at View.js:34)
+    in View (at CardSheet.tsx:33)
+    in CardSheet (at Card.tsx:573)
+    in RCTView (at View.js:34)
+    in View (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at Card.tsx:555)
+    in PanGestureHandler (at GestureHandlerNative.tsx:13)
+    in PanGestureHandler (at Card.tsx:549)
+    in RCTView (at View.js:34)
+    in View (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at Card.tsx:544)
+    in RCTView (at View.js:34)
+    in View (at Card.tsx:538)
+    in Card (at CardContainer.tsx:206)
+    in CardContainer (at CardStack.tsx:623)
+    in RNSScreen (at createAnimatedComponent.js:217)
+    in AnimatedComponent (at createAnimatedComponent.js:278)
+    in AnimatedComponentWrapper (at src/index.native.tsx:127)
+    in Screen (at Screens.tsx:74)
+    in MaybeScreen (at CardStack.tsx:616)
+    in RNSScreenContainer (at src/index.native.tsx:165)
+    in ScreenContainer (at Screens.tsx:50)
+    in MaybeScreenContainer (at CardStack.tsx:498)
+    in CardStack (at StackView.tsx:462)
+    in KeyboardManager (at StackView.tsx:458)
+    in RNCSafeAreaProvider (at SafeAreaContext.tsx:76)
+    in SafeAreaProvider (at SafeAreaProviderCompat.tsx:42)
+    in SafeAreaProviderCompat (at StackView.tsx:455)
+    in GestureHandlerRootView (at GestureHandlerRootView.android.tsx:26)
+    in GestureHandlerRootView (at StackView.tsx:454)
+    in StackView (at createStackNavigator.tsx:87)
+    in StackNavigator (at App.js:15)
+    in EnsureSingleNavigator (at BaseNavigationContainer.tsx:409)
+    in BaseNavigationContainer (at NavigationContainer.tsx:91)
+    in ThemeProvider (at NavigationContainer.tsx:90)
+    in NavigationContainer (at App.js:14)
+    in App (at renderApplication.js:47)
+    in RCTView (at View.js:34)
+    in View (at AppContainer.js:107)
+    in RCTView (at View.js:34)
+    in View (at AppContainer.js:134)
+    in AppContainer (at renderApplication.js:40)
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Joismagilova@MacBook-Air-Olga OlgaStoreManager % [K[?2004hnnpx react-native run-android[?2004l
+[36m[1minfo[22m[39m [0mRunning [1mjetifier[22m to migrate libraries to AndroidX. [2mYou can disable it using "--no-jetifier" flag.[22m[0m
+Jetifier found 1026 file(s) to forward-jetify. Using 4 workers...
+[36m[1minfo[22m[39m [0mJS server already running.[0m
+[36m[1minfo[22m[39m [0mInstalling the app...[0m
+
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [46ms][m[38D[1B[1m> Evaluating settings[m[0K[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [144ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [246ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [345ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [446ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [547ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [642ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [747ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [846ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [946ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[2B[2A[1m<[0;1m-------------> 0% CONFIGURING [1s][m[0K[35D[1B[1m> root project > Resolve dependencies of :classpath[m[51D[1B[1A[1m> root project > Resolve files of :classpath[m[0K[44D[1B[1A[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 12% CONFIGURING [1s][m[36D[1B[1m> :app[m[0K[6D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 12% CONFIGURING [2s][m[36D[2B[2A[1m<[0;32;1m=[0;39;1m------------> 12% CONFIGURING [3s][m[36D[2B[2A[1m<[0;32;1m====[0;39;1m---------> 37% CONFIGURING [3s][m[36D[1B[1m> :react-native-gesture-handler[m[31D[1B[2A[1m<[0;32;1m===========[0;39;1m--> 87% CONFIGURING [3s][m[36D[1B[1m> :react-native-vector-icons[m[0K[28D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [3s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [3s][m[0K[34D[1B[1m> :react-native-vector-icons:packageDebugRenderscript[m[53D[1B[2A[1m<[0;32;1m==[0;39;1m-----------> 19% EXECUTING [3s][m[34D[1B[1m> :app:checkDebugAarMetadata > Resolve dependencies of :app:debugRuntimeClasspath[m[81D[1B
+
+
+[4A[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform flipper-0[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform flipper-n[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform swiperefr[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform react-nat[m[96D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 19% EXECUTING [4s][m[34D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform memory-ty[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform imagepipe[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform nativeima[m[96D[1B[1m> :app:checkDebugAarMetadata > Resolve files of :app:debugRuntimeClasspath > Transform appcompat[m[96D[1B[5A[1m<[0;32;1m===[0;39;1m----------> 27% EXECUTING [4s][m[34D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :react-native-safe-area-context:compileDebugShaders[m[0K[53D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m====[0;39;1m---------> 32% EXECUTING [4s][m[34D[1B[1m> :app:mergeDebugAssets > Resolve files of :app:debugRuntimeClasspath > Transform lifecycle-runt[m[96D[1B[1m> :app:mergeDebugAssets > Resolve files of :app:debugRuntimeClasspath > Transform lifecycle-view[m[96D[1B[1m> :app:mergeDebugAssets > Resolve files of :app:debugRuntimeClasspath > Transform lifecycle-view[m[96D[1B[1m> :app:mergeDebugAssets > Resolve files of :app:debugRuntimeClasspath > Transform cardview-1.0.0[m[96D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :app:mergeDebugAssets[m[0K[23D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m====[0;39;1m---------> 33% EXECUTING [4s][m[34D[3B[1m> :app:copyDebugReactNativeVectorIconFonts[m[42D[2B[5A[1m<[0;32;1m====[0;39;1m---------> 35% EXECUTING [4s][m[34D[3B> IDLE[0K[6D[2B[5A[1m<[0;32;1m======[0;39;1m-------> 51% EXECUTING [4s][m[34D[1B[1m> :app:processDebugMainManifest > Resolve files of :app:debugRuntimeClasspath > Transform memory[m[96D[1B[1m> :app:processDebugMainManifest > Resolve files of :app:debugRuntimeClasspath > Transform memory[m[96D[1B[1m> :app:processDebugMainManifest > Resolve files of :app:debugRuntimeClasspath > Transform native[m[96D[1B[1m> :app:processDebugMainManifest > Resolve files of :app:debugRuntimeClasspath > Transform imagep[m[96D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 54% EXECUTING [4s][m[34D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> :react-native-community_masked-view:generateDebugRFile > Resolve dependencies of :react-native[m[96D[1B[4A[1m> :react-native-community_masked-view:generateDebugRFile > Resolve files of :react-native-commun[m[96D[1B[1m> :react-native-community_masked-view:generateDebugRFile > Resolve files of :react-native-commun[m[96D[1B[1m> :react-native-community_masked-view:generateDebugRFile > Resolve files of :react-native-commun[m[96D[1B[1m> :react-native-community_masked-view:generateDebugRFile > Resolve files of :react-native-commun[m[96D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 58% EXECUTING [4s][m[34D[1B> IDLE[0K[6D[1B[1m> :react-native-screens:generateDebugRFile > Resolve dependencies of :react-native-screens:debug[m[96D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;32;1m=======[0;39;1m------> 58% EXECUTING [5s][m[34D[5B[3A[1m> :react-native-screens:generateDebugRFile[m[0K[42D[3B[5A[1m<[0;32;1m=======[0;39;1m------> 60% EXECUTING [5s][m[34D[2B[1m> :app:processDebugResources > Resolve dependencies of :app:debugCompileClasspath[m[81D[3B[5A[1m<[0;32;1m========[0;39;1m-----> 65% EXECUTING [5s][m[34D[2B[1m> :react-native-safe-area-context:compileDebugJavaWithJavac[m[0K[59D[3B[5A[1m<[0;32;1m=========[0;39;1m----> 71% EXECUTING [5s][m[34D[2B[1m> :app:compressDebugAssets[m[0K[26D[3B[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [5s][m[34D[2B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath[m[79D[3B[4A[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform load[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform draw[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform view[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform acti[m[96D[1B[4A[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform vect[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform vect[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform vect[m[96D[1B[1m> :app:checkDebugDuplicateClasses > Resolve files of :app:debugRuntimeClasspath > Transform tran[m[96D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 79% EXECUTING [5s][m[34D[1B[1m> :app:mergeExtDexDebug > Resolve files of :app:debugRuntimeClasspath > Transform fbjni-java-onl[m[96D[1B[1m> :app:mergeExtDexDebug > Resolve files of :app:debugRuntimeClasspath > Transform okio-1.17.5.ja[m[96D[1B> IDLE[0K[6D[1B[1m> :app:mergeExtDexDebug > Resolve files of :app:debugRuntimeClasspath > Transform okhttp-3.12.12[m[96D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 85% EXECUTING [5s][m[34D[1B[1m> :app:dexBuilderDebug[m[0K[22D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[5A[1m<[0;32;1m============[0;39;1m-> 99% EXECUTING [6s][m[34D[1B[1m> :app:packageDebug[m[0K[19D[4B[4A[1m> :app:installDebug[m[19D[4B[5A[1m<[0;32;1m============[0;39;1m-> 99% EXECUTING [7s][m[34D[5B[5A[1m<[0;32;1m============[0;39;1m-> 99% EXECUTING [8s][m[34D[5B[5A[0K
+[1m> Task :app:installDebug[m
+Installing APK 'app-debug.apk' on 'React_Native_Pixel_4_API_29_(AVD) - 10' for app:debug
+Installed on 1 device.
+[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 9s
+115 actionable tasks: 5 executed, 110 up-to-date
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A[0m[?12l[?25h[36m[1minfo[22m[39m [0mConnecting to the development server...[0m
+[36m[1minfo[22m[39m [0mStarting the app on "emulator-5554"...[0m
+Starting: Intent { cmp=com.olgastoremanager/.MainActivity }
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Joismagilova@MacBook-Air-Olga OlgaStoreManager % [K[?2004hkkeytool -v[?2004l
+Usage error: no command provided
+Key and Certificate Management Tool
+
+Commands:
+
+ -certreq            Generates a certificate request
+ -changealias        Changes an entry's alias
+ -delete             Deletes an entry
+ -exportcert         Exports certificate
+ -genkeypair         Generates a key pair
+ -genseckey          Generates a secret key
+ -gencert            Generates certificate from a certificate request
+ -importcert         Imports a certificate or a certificate chain
+ -importpass         Imports a password
+ -importkeystore     Imports one or all entries from another keystore
+ -keypasswd          Changes the key password of an entry
+ -list               Lists entries in a keystore
+ -printcert          Prints the content of a certificate
+ -printcertreq       Prints the content of a certificate request
+ -printcrl           Prints the content of a CRL file
+ -storepasswd        Changes the store password of a keystore
+
+Use "keytool -command_name -help" for usage of command_name
+[1m[7m%[27m[1m[0m                                                                                                 [0m[27m[24m[Joismagilova@MacBook-Air-Olga OlgaStoreManager % [K[?2004h
