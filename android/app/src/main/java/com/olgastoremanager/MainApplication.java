@@ -1,6 +1,7 @@
 package com.olgastoremanager;
 
 import android.app.Application;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -26,7 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
-          packages.add(new RNCWebViewPackage());
+          // packages.add(new RNCWebViewPackage());
           return packages;
         }
 
