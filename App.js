@@ -4,7 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 // screens
 import InstagramAuth from './components/screens/InstagramAuth';
-import Fake from './components/screens/Fake'
+import Fake from './components/screens/Fake';
+import InstagramFeed from './components/screens/InstagramFeed';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,9 @@ function App() {
         },
         Fake: {
           path: 'feed'
+        },
+        InstagramFeed: {
+          path: 'instagram'
         }
       }
     }  
@@ -30,6 +34,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={InstagramAuth} />
         <Stack.Screen name="Fake" component={Fake} />
+        <Stack.Screen name="InstagramFeed" component={InstagramFeed} />
       </Stack.Navigator>
     </NavigationContainer>
   );

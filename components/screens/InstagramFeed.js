@@ -1,19 +1,17 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ScrollView, Image, View, Text, StyleSheet, Dimensions } from 'react-native';
-import { Header, Avatar } from 'react-native-elements';
-
-import configData from '../../config.json';
+import { Header } from 'react-native-elements';
 
 const DEVICE_WIDTH = Dimensions.get("window").width;
 
-export default function InstagramFeed () {
+export default function InstagramFeed ({route}) {
 
   // Fetching data from Instagram API
   const [data, setData] = useState([]);
   const [fetchingData, setFetchingData] = useState(0)
   
   useEffect(() => {
-    fetch(`https://graph.facebook.com/${configData.VERSION_FACEBOOK_GRAPH}/${configData.ID_INSTAGRAM_BUSINESS_ACCOUNT}/media?fields=media_url&access_token=${configData.ACCESS_TOKEN}`)
+    fetch(`https://graph.instagram.com/me/media?fields=media_url&access_token=${route.params.token}`)
       .then(res => res.json())
       .then(json => setData(json.data))
       .catch(err => console.log(err))
@@ -22,7 +20,7 @@ export default function InstagramFeed () {
   const [profile, setProfile] = useState({});
 
   useEffect(() => {
-    fetch(`https://graph.facebook.com/${configData.VERSION_FACEBOOK_GRAPH}/${configData.ID_INSTAGRAM_BUSINESS_ACCOUNT}?fields=profile_picture_url,username&access_token=${configData.ACCESS_TOKEN}`)
+    fetch(`https://graph.instagram.com/me?fields=username&access_token=${route.params.token}`)
       .then(res => res.json())
       .then(json => setProfile(json))
       .catch(err => console.log(err))
@@ -89,13 +87,6 @@ export default function InstagramFeed () {
     <View style={{flex:1, width: '100%', height: '100%'}}>
       <Header
         placement="left"
-        leftComponent={
-          <Avatar
-          size="medium"
-          rounded
-          source={{uri: profile.profile_picture_url}}
-          />
-        }
         centerComponent={
           <Text style={styles.titleHeader}>@{profile.username}</Text>
         }

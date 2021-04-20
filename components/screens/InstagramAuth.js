@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-// import { authorize } from 'react-native-app-auth';
-// import { WebView } from 'react-native-webview';
-// import { LoginButton, AccessToken } from 'react-native-fbsdk-next';
 
 import config from '../../config.json';
 
@@ -13,10 +10,6 @@ export default function InstagramAuth() {
 
   const instagramEnteredLink = async() => {
     const enter = await Linking.openURL(enteredURL);
-  }
-
-  const fakeDeepLink = async() => {
-    const enter = await Linking.openURL('storemanager://feed');
   }
   
   return (
@@ -29,10 +22,6 @@ export default function InstagramAuth() {
           Get my feed from Instagram
         </Text>
       </Icon.Button>
-      <Icon.Button
-        name="twitter"
-        onPress={fakeDeepLink}
-      ></Icon.Button>
     </View>
   );
 }
