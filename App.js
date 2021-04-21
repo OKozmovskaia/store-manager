@@ -6,6 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import InstagramAuth from './components/screens/InstagramAuth';
 import GetTokenScreen from './components/screens/GetTokenScreen';
 import InstagramFeed from './components/screens/InstagramFeed';
+import NewUser from './components/screens/NewUser';
+import ExistUser from './components/screens/ExistUser';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +26,12 @@ function App() {
         },
         InstagramFeed: {
           path: 'instagram'
+        },
+        NewUser: {
+          path: 'new-user'
+        },
+        ExistUser: {
+          path: 'exist'
         }
       }
     }  
@@ -35,6 +43,8 @@ function App() {
         <Stack.Screen name="Home" component={InstagramAuth} />
         <Stack.Screen name="GetTokenScreen" component={GetTokenScreen} />
         <Stack.Screen name="InstagramFeed" component={InstagramFeed} />
+        <Stack.Screen name="NewUser" component={NewUser} />
+        <Stack.Screen name="ExistUser" component={ExistUser} />
       </Stack.Navigator>
     </NavigationContainer>
   );
