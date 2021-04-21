@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, Linking } from 'react-native';
+import React from 'react';
+import { View, Text, Linking, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import config from '../../config.json';
@@ -13,15 +13,36 @@ export default function InstagramAuth() {
   }
   
   return (
-    <View>
+    <View style={styles.instagramAuthContainer}>
       <Icon.Button
         name="instagram"
         onPress={instagramEnteredLink}
+        style={styles.instagramAuthButton}
       >
-        <Text>
+        <Text style={styles.instagramAuthText}>
           Get my feed from Instagram
         </Text>
       </Icon.Button>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  instagramAuthContainer: {
+    flex: 1,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  instagramAuthButton: {
+    borderRadius: 6,
+    backgroundColor: "#0084ff",
+  },
+  instagramAuthText: {
+    textAlign: "center",
+    paddingHorizontal: 8,
+    fontSize: 22,
+    color: "#fff",
+    fontWeight: "bold"
+  }
+})

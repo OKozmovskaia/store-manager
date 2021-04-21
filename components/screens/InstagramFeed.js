@@ -62,7 +62,10 @@ export default function InstagramFeed ({route}) {
       borderRadius: 10,
     },
     titleHeader: {
-      fontSize: 20
+      paddingHorizontal: 20,
+      paddingVertical: 15,
+      fontSize: 20,
+      fontWeight: 'bold'
     },
     circleContainer: {
       position: "absolute",
@@ -85,15 +88,8 @@ export default function InstagramFeed ({route}) {
 
   return (
     <View style={{flex:1, width: '100%', height: '100%'}}>
-      <Header
-        placement="left"
-        centerComponent={
-          <Text style={styles.titleHeader}>@{profile.username}</Text>
-        }
-        containerStyle={{
-          backgroundColor: 'transparent'
-        }}
-      />
+        <Text style={styles.titleHeader}>@{profile.username}</Text>
+        
         <ScrollView
           horizontal
           pagingEnabled

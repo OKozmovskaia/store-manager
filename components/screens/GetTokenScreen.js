@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import configData from '../../config.json';
-import InstagramFeed from './InstagramFeed';
 
-export default function Fake ({navigation: {navigate}, route}) {
+export default function GetTokenScreen ({navigation: {navigate}, route}) {
   const [token, setToken] = useState('');
   const [longToken, setLongToken] = useState('');
 
@@ -33,7 +32,7 @@ export default function Fake ({navigation: {navigate}, route}) {
       .then(res => res.json())
       .then(json => setToken(json.access_token))
       .catch(err => console.log(err))
-      
+
       exchangeToken(token);
       return;
     }
@@ -52,8 +51,24 @@ export default function Fake ({navigation: {navigate}, route}) {
   }
   
   return (
-    <View>
-      {longToken ? navigate('InstagramFeed', { token: longToken }) : <Text>Data uploading </Text>}
+    <View style={styles.getTokenScreenContainer}>
+      {longToken ? navigate('InstagramFeed', { token: longToken }) : <Text style={styles.getTokenScreenText}>Data uploading </Text>}
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  getTokenScreenContainer: {
+    flex: 1,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  getTokenScreenText: {
+    textAlign: "center",
+    paddingHorizontal: 8,
+    fontSize: 22,
+    color: "#0084ff",
+    fontWeight: "bold"
+  }
+})
