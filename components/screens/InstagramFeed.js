@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ScrollView, Image, View, Text, StyleSheet, Dimensions } from 'react-native';
-import { Header } from 'react-native-elements';
 
 const DEVICE_WIDTH = Dimensions.get("window").width;
 
