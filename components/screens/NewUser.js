@@ -12,11 +12,12 @@ export default function NewUser () {
       <View>
         <TextInput
           style={styles.newUserScreenInput}
-          defaultValue="Enter your name"
+          placeholder="Enter your name"
         />
         <TextInput
           style={styles.newUserScreenInput}
-          defaultValue="Enter your phone"
+          keyboardType="numeric"
+          placeholder="Enter your phone"
         />
         <Button
           title='Join to loyalty program'
