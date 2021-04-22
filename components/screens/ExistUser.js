@@ -2,7 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function ExistUser () {
+export default function ExistUser ({navigation: {navigate}}) {
+
+  // setTimeout(() => {
+  //   navigate('InstagramFeed');
+  // }, 20000);
+
   return(
     <View style={styles.newExistScreenContainer}>
       <Text style={styles.newExistScreenText} >Congrats Olga</Text>

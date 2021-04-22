@@ -23,7 +23,7 @@ export default function InstagramAuth({ navigation: { navigate } }) {
           Get my feed from Instagram
         </Text>
       </Icon.Button>
-
+{/* 
       <Button
         onPress={() => navigate('NewUser')}
         title='Go to screen for New User'
@@ -32,7 +32,7 @@ export default function InstagramAuth({ navigation: { navigate } }) {
       <Button
         onPress={() => navigate('ExistUser')}
         title='Go to screen for Exist User'
-      />
+      /> */}
     </View>
   );
 }

@@ -31,7 +31,7 @@ function App() {
           path: 'new-user'
         },
         ExistUser: {
-          path: 'exist'
+          path: 'exist-user'
         }
       }
     }  

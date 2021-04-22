@@ -3,6 +3,11 @@ import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function NewUser () {
+
+  // setTimeout(() => {
+  //   navigate('InstagramFeed');
+  // }, 60000);
+
   return(
     <View style={styles.newUserScreenContainer}>
       <Text
