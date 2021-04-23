@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function NewUser () {
-
+  const [userName, setUserName] = useState('');
+  const [userPhone, setUserPhone] = useState('');
   // setTimeout(() => {
   //   navigate('InstagramFeed');
   // }, 60000);
@@ -18,11 +19,19 @@ export default function NewUser () {
         <TextInput
           style={styles.newUserScreenInput}
           placeholder="Enter your name"
+          autoCapitalize='none'
+          autoCorrect={false}
+          value={userName}
+          onChangeText={(newValue) => setUserName(newValue)}
         />
         <TextInput
           style={styles.newUserScreenInput}
-          keyboardType="numeric"
+          keyboardType="phone-pad"
           placeholder="Enter your phone"
+          autoCapitalize='none'
+          autoCorrect={false}
+          value={userPhone}
+          onChangeText={(newValue) => setUserPhone(newValue)}
         />
         <Button
           title='Join to loyalty program'
