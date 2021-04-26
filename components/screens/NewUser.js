@@ -5,9 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 export default function NewUser () {
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
-  // setTimeout(() => {
-  //   navigate('InstagramFeed');
-  // }, 60000);
+  
 
   return(
     <View style={styles.newUserScreenContainer}>
@@ -37,6 +35,12 @@ export default function NewUser () {
           title='Join to loyalty program'
           color='#09b83e'
         />
+        {/* {userName.length === 0
+        ? setTimeout(() => {
+          navigate('InstagramFeed');
+          }, 60000)
+        : null
+        } */}
       </View>
     </View>
   )

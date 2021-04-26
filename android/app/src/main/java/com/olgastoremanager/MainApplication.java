@@ -1,8 +1,6 @@
 package com.olgastoremanager;
 
 import android.app.Application;
-import com.facebook.reactnative.androidsdk.FBSDKPackage;
-import com.reactnativecommunity.webview.RNCWebViewPackage;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
