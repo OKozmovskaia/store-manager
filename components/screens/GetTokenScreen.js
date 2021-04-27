@@ -6,7 +6,7 @@ import configData from '../../config.json';
 export default function GetTokenScreen ({navigation: {navigate}, route}) {
   const [token, setToken] = useState('');
   const [longToken, setLongToken] = useState('');
-
+  
   if(route.params.code) {
     const str = route.params.code;
     const code = str.substring(0, route.params.code.length - 2);
