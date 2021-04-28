@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ScrollView, Image, View, Text, StyleSheet, Dimensions } from 'react-native';
+import axios from 'axios';
 
 const DEVICE_WIDTH = Dimensions.get("window").width;
 
@@ -7,22 +8,43 @@ export default function InstagramFeed ({route}) {
 
   // Fetching data from Instagram API
   const [data, setData] = useState([]);
-  const [fetchingData, setFetchingData] = useState(0)
+  const [fetchingData, setFetchingData] = useState(0);
+  const [profile, setProfile] = useState({});
   
   useEffect(() => {
-    fetch(`https://graph.instagram.com/me/media?fields=media_url&access_token=${route.params.token}`)
-      .then(res => res.json())
-      .then(json => setData(json.data))
-      .catch(err => console.log(err))
+    const getMediaData = async() => {
+      try {
+        const response = await axios({
+          method: 'GET',
+          url: `https://graph.instagram.com/me/media?fields=media_url&access_token=${route.params.token}`
+        });
+        console.log(response.data.data);
+        setData(response.data.data);
+
+      } catch (error) {
+        console.log(error.message, 'Error when getting long-token: ', error.config);
+      }
+      return;
+    }
+    getMediaData();
   }, []);
 
-  const [profile, setProfile] = useState({});
+  
 
   useEffect(() => {
-    fetch(`https://graph.instagram.com/me?fields=username&access_token=${route.params.token}`)
-      .then(res => res.json())
-      .then(json => setProfile(json))
-      .catch(err => console.log(err))
+    getProfileData = async() => {
+      try {
+        const response = await axios({
+          method: 'GET',
+          url: `https://graph.instagram.com/me?fields=username&access_token=${route.params.token}`
+        });
+        setProfile(response.data);
+
+      } catch (error) {
+        console.log(error.message, 'Error when getting long-token: ', error.config);
+      }  
+    }
+    getProfileData();
   }, []);
 
   // Style and animated images

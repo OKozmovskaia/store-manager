@@ -39,7 +39,7 @@ export default function GetTokenScreen ({navigation: {navigate}, route}) {
           return;
 
         } catch (error) {
-          console.log('Error when getting short-token: ', error.config);
+          console.log(error.message, 'Error when getting short-token: ', error.config);
         }
         
       }
@@ -58,7 +58,7 @@ export default function GetTokenScreen ({navigation: {navigate}, route}) {
           setLongToken(response.data.access_token)
           return;
         } catch (error) {
-          console.log('Error when getting long-token: ', error.config);
+          console.log(error.message, 'Error when getting long-token: ', error.config);
         } 
       }
     
