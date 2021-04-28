@@ -1,14 +1,12 @@
 import React from 'react';
-import { View, Text, Linking, StyleSheet } from 'react-native';
+import { View, Text, Linking, StyleSheet, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import config from '../../config.json';
 
-export default function InstagramAuth({ navigation: { navigate } }) {
-
+export default function InstagramAuth() {
   const enteredURL = `https://www.instagram.com/oauth/authorize?client_id=${config.ID_BUSINESS_ACCOUNT_INSTAGRAM}&redirect_uri=${config.REDIRECT_URL}&scope=user_profile,user_media&response_type=code`;
 
-  
   const instagramEnteredLink = async() => {
     const enter = await Linking.openURL(enteredURL);
   }
@@ -24,16 +22,6 @@ export default function InstagramAuth({ navigation: { navigate } }) {
           Get my feed from Instagram
         </Text>
       </Icon.Button>
-{/* 
-      <Button
-        onPress={() => navigate('NewUser')}
-        title='Go to screen for New User'
-      />
-
-      <Button
-        onPress={() => navigate('ExistUser')}
-        title='Go to screen for Exist User'
-      /> */}
     </View>
   );
 }
