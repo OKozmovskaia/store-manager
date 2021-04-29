@@ -2,16 +2,17 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { APIProvider } from './src/context/apiContext'
 // screens
-import InstagramAuth from './components/screens/InstagramAuth';
-import GetTokenScreen from './components/screens/GetTokenScreen';
-import InstagramFeed from './components/screens/InstagramFeed';
-import NewUser from './components/screens/NewUser';
-import ExistUser from './components/screens/ExistUser';
+import InstagramAuth from './src/screens/InstagramAuth';
+import GetTokenScreen from './src/screens/GetTokenScreen';
+import InstagramFeed from './src/screens/InstagramFeed';
+import NewUser from './src/screens/NewUser';
+import ExistUser from './src/screens/ExistUser';
 
 const Stack = createStackNavigator();
 
-function App() {
+const App = () => {
 
   const linking = {
     prefixes: ['storemanager://'],
@@ -50,4 +51,10 @@ function App() {
   );
 }
 
-export default App;
+export default () => {
+  return(
+    <APIProvider>
+      <App />
+    </APIProvider>
+  )
+};
