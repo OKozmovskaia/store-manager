@@ -20,7 +20,11 @@ export default function GetTokenScreen ({navigation: {navigate}, route}) {
   
   return (
     <View style={styles.getTokenScreenContainer}>
-      {state.token ? navigate('InstagramFeed', { token }) : <Text style={styles.getTokenScreenText}>Data uploading </Text>}
+      {state.token
+      ? navigate('InstagramFeed', { token })
+      : (state.errorMessage 
+        ? <Text style={styles.errorMessage}>{state.errorMessage}</Text>
+        : <Text style={styles.getTokenScreenText}>Data uploading </Text>)}
     </View>
   )
 }
@@ -37,6 +41,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     fontSize: 22,
     color: "#0084ff",
+    fontWeight: "bold"
+  },
+  errorMessage: {
+    textAlign: "center",
+    paddingHorizontal: 8,
+    fontSize: 22,
+    color: "red",
     fontWeight: "bold"
   }
 })

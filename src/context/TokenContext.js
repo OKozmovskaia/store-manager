@@ -2,8 +2,10 @@ import createDataContext from './createDataContext';
 import configData from '../../config.json';
 import axios from 'axios';
 
-const tokenReducer = (state, actions) => {
-  switch(actions.type) {
+const tokenReducer = (state, action) => {
+  switch(action.type) {
+    case 'add_error':
+      return {...state, errorMessage: action.payload}
     default:
       return state;
   }
@@ -34,7 +36,7 @@ const getToken = dispatch => {
           }
         });
         console.log('Long-lived token: ', response.data.access_token)
-        setToken(response.data.access_token)
+        // setToken(response.data.access_token)
         return;
       } catch (error) {
         console.log(error.message, 'Error when getting long-token: ', error.config);
@@ -56,6 +58,7 @@ const getToken = dispatch => {
 
     } catch (error) {
       console.log(error.message, 'Error when getting short-token: ', error.config);
+      dispatch({type: 'add_error', payload: 'Something went wrong with getting token from Instagram'})
     };
     // modify our state
 
@@ -66,5 +69,5 @@ const getToken = dispatch => {
 export const {Provider, Context} = createDataContext(
   tokenReducer,
   {getToken},
-  {token: ''}
+  {token: '', errorMessage: ''}
 );
