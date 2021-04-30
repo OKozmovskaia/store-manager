@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import createDataContext from './createDataContext';
 import configData from '../../config.json';
 import axios from 'axios';
@@ -5,7 +6,11 @@ import axios from 'axios';
 const tokenReducer = (state, action) => {
   switch(action.type) {
     case 'add_error':
-      return {...state, errorMessage: action.payload}
+      return {...state, errorMessage: action.payload};
+    
+    case 'get_token':
+      return {token: action.payload, errorMessage: ''};
+      
     default:
       return state;
   }
@@ -36,7 +41,8 @@ const getToken = dispatch => {
           }
         });
         console.log('Long-lived token: ', response.data.access_token)
-        // setToken(response.data.access_token)
+        await AsyncStorage.setItem('token', response.data.access_token);
+        dispatch({type: 'get_token', payload: response.data.access_token})
         return;
       } catch (error) {
         console.log(error.message, 'Error when getting long-token: ', error.config);
@@ -69,5 +75,5 @@ const getToken = dispatch => {
 export const {Provider, Context} = createDataContext(
   tokenReducer,
   {getToken},
-  {token: '', errorMessage: ''}
+  {token: null, errorMessage: ''}
 );
