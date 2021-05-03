@@ -76,6 +76,7 @@ const getTokenFromStorage = dispatch => {
   return async() => {
     const token = await AsyncStorage.getItem('token');
     dispatch({type: 'get_token', payload: token});
+    console.lof("Token from Storage: ", token);
     return token;
   }
 }

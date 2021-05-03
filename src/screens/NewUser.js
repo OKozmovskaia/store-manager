@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {Context as TokenContext} from '../context/TokenContext';
 
-export default function NewUser () {
+export default function NewUser ({navigation: {navigate}}) {
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
+  const { getTokenFromStorage } = useContext(TokenContext);
   
+  useEffect(() => {
+      setTimeout(() => {
+        if(userName.length === 0 || userPhone.length === 0) {
+          navigate('InstagramFeed', {token: getTokenFromStorage});
+        }
+      }, 60000)  
+  }, [])
 
   return(
     <View style={styles.newUserScreenContainer}>
@@ -35,12 +44,6 @@ export default function NewUser () {
           title='Join to loyalty program'
           color='#09b83e'
         />
-        {/* {userName.length === 0
-        ? setTimeout(() => {
-          navigate('InstagramFeed');
-          }, 60000)
-        : null
-        } */}
       </View>
     </View>
   )

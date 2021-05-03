@@ -10,7 +10,7 @@ export default function ExistUser ({navigation: {navigate}}) {
   useEffect(() => {
     setTimeout(()=> {
       navigate('InstagramFeed', {token: getTokenFromStorage});
-    }, 20 000)
+    }, 20000)
   }, [])
 
   return(
