@@ -1,17 +1,20 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {Context as TokenContext} from '../context/TokenContext';
-
 
 export default function ExistUser ({navigation: {navigate}, route}) {
-  const { getTokenFromStorage } = useContext(TokenContext);
 
   useEffect(() => {
+    const redirectToFeed = async() => {
+      const token = await AsyncStorage.getItem('token');
+      navigate('InstagramFeed', { token: token});
+    };
+
     setTimeout(()=> {
-      navigate('InstagramFeed', {token: getTokenFromStorage});
-    }, 20000)
-  }, [])
+      redirectToFeed();
+    }, 20000)        
+  }, []);
 
   const userName = route.params.username;
   const pointsStr = route.params.points;

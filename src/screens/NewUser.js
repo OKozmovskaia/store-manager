@@ -1,13 +1,19 @@
 import React, { useState, useContext } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Context as TokenContext} from '../context/TokenContext';
 
 export default function NewUser ({navigation: {navigate}}) {
-  const { state, singUpNewUser, getTokenFromStorage } = useContext(TokenContext);
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
-  
+  const {singUpNewUser} = useContext(TokenContext);
+
+  const redirectToFeed = async() => {
+    const token = await AsyncStorage.getItem('token');
+    navigate('InstagramFeed', { token: token});
+  };
+
   return(
     <View style={styles.newUserScreenContainer}>
       <Text
@@ -41,6 +47,9 @@ export default function NewUser ({navigation: {navigate}}) {
             singUpNewUser({userName, userPhone});
             setUserName('');
             setUserPhone('');
+            setTimeout(()=> {
+              redirectToFeed();
+            }, 3000);
           }}
         />
       </View>

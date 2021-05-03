@@ -21,7 +21,7 @@ export default function GetTokenScreen ({navigation: {navigate}, route}) {
   return (
     <View style={styles.getTokenScreenContainer}>
       {state.token
-      ? navigate('InstagramFeed', { token: state.token })
+      ? navigate('InstagramFeed', {token: state.token})
       : (state.errorMessage 
         ? <Text style={styles.errorMessage}>{state.errorMessage}</Text>
         : <Text style={styles.getTokenScreenText}>Data uploading </Text>)}

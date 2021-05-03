@@ -5,12 +5,11 @@ import axios from 'axios';
 const DEVICE_WIDTH = Dimensions.get("window").width;
 
 export default function InstagramFeed ({route}) {
-
-  // Fetching data from Instagram API
+   // Fetching data from Instagram API
   const [data, setData] = useState([]);
   const [fetchingData, setFetchingData] = useState(0);
   const [profile, setProfile] = useState({});
-  
+
   useEffect(() => {
     const getMediaData = async() => {
       try {
@@ -18,21 +17,15 @@ export default function InstagramFeed ({route}) {
           method: 'GET',
           url: `https://graph.instagram.com/me/media?fields=media_url&access_token=${route.params.token}`
         });
-        console.log(response.data.data);
         setData(response.data.data);
 
       } catch (error) {
-        console.log(error.message, 'Error when getting long-token: ', error.config);
+        console.log(error.message, 'Error when getting photos: ', error.config);
       }
       return;
-    }
-    getMediaData();
-  }, []);
+    };
 
-  
-
-  useEffect(() => {
-    getProfileData = async() => {
+    const getProfileData = async() => {
       try {
         const response = await axios({
           method: 'GET',
@@ -41,9 +34,10 @@ export default function InstagramFeed ({route}) {
         setProfile(response.data);
 
       } catch (error) {
-        console.log(error.message, 'Error when getting long-token: ', error.config);
+        console.log(error.message, 'Error when getting profile-data: ', error.config);
       }  
     }
+    getMediaData();
     getProfileData();
   }, []);
 
