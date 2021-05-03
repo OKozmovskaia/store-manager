@@ -69,15 +69,6 @@ const getToken = dispatch => {
   }
 }
 
-const getTokenFromStorage = dispatch => {
-  return async() => {
-    const token = await AsyncStorage.getItem('token');
-    dispatch({type: 'get_token', payload: token});
-    console.log("Token from Storage: ", token);
-    return token;
-  }
-}
-
 const singUpNewUser = dispatch => {
   return async({userName, userPhone}) => {
     try {
@@ -91,6 +82,6 @@ const singUpNewUser = dispatch => {
 
 export const {Provider, Context} = createDataContext(
   tokenReducer,
-  {getToken, getTokenFromStorage, singUpNewUser},
+  {getToken, singUpNewUser},
   {token: null, errorMessage: ''}
 );
