@@ -13,7 +13,7 @@ export default function ExistUser ({navigation: {navigate}, route}) {
 
     setTimeout(()=> {
       redirectToFeed();
-    }, 20000)        
+    }, 5000)        
   }, []);
 
   const userName = route.params.username;

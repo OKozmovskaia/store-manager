@@ -49,7 +49,7 @@ export default function NewUser ({navigation: {navigate}}) {
             setUserPhone('');
             setTimeout(()=> {
               redirectToFeed();
-            }, 3000);
+            }, 5000);
           }}
         />
       </View>
