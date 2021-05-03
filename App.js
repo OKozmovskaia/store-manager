@@ -2,7 +2,8 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Provider as TokenProvider } from './src/context/TokenContext'
+import { Provider as TokenProvider } from './src/context/TokenContext';
+
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
 import GetTokenScreen from './src/screens/GetTokenScreen';

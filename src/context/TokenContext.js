@@ -10,7 +10,7 @@ const tokenReducer = (state, action) => {
     
     case 'get_token':
       return {token: action.payload, errorMessage: ''};
-      
+
     default:
       return state;
   }
@@ -72,8 +72,16 @@ const getToken = dispatch => {
   }
 }
 
+const getTokenFromStorage = dispatch => {
+  return async() => {
+    const token = await AsyncStorage.getItem('token');
+    dispatch({type: 'get_token', payload: token});
+    return token;
+  }
+}
+
 export const {Provider, Context} = createDataContext(
   tokenReducer,
-  {getToken},
+  {getToken, getTokenFromStorage},
   {token: null, errorMessage: ''}
 );

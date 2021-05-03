@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {Context as TokenContext} from '../context/TokenContext';
+
 
 export default function ExistUser ({navigation: {navigate}}) {
+  const { getTokenFromStorage } = useContext(TokenContext);
 
-  // setTimeout(() => {
-  //   navigate('InstagramFeed');
-  // }, 20000);
+  useEffect(() => {
+    setTimeout(()=> {
+      navigate('InstagramFeed', {token: getTokenFromStorage});
+    }, 20 000)
+  }, [])
 
   return(
     <View style={styles.newExistScreenContainer}>
