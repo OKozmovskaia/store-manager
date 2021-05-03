@@ -1,21 +1,13 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Context as TokenContext} from '../context/TokenContext';
 
 export default function NewUser ({navigation: {navigate}}) {
+  const { state, singUpNewUser, getTokenFromStorage } = useContext(TokenContext);
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
-  const { getTokenFromStorage } = useContext(TokenContext);
   
-  // useEffect(() => {
-  //     setTimeout(() => {
-  //       if(userName.length === 0 || userPhone.length === 0) {
-  //         navigate('InstagramFeed', {token: getTokenFromStorage});
-  //       }
-  //     }, 60000)  
-  // }, [])
-
   return(
     <View style={styles.newUserScreenContainer}>
       <Text
@@ -24,25 +16,32 @@ export default function NewUser ({navigation: {navigate}}) {
       <Icon name="gift" style={styles.newUserScreenIcon}/>
       <View>
         <TextInput
+          label='Name'
           style={styles.newUserScreenInput}
           placeholder="Enter your name"
           autoCapitalize='none'
           autoCorrect={false}
           value={userName}
-          onChangeText={(newValue) => setUserName(newValue)}
+          onChangeText={setUserName}
         />
         <TextInput
+          label='Phone'
           style={styles.newUserScreenInput}
           keyboardType="phone-pad"
           placeholder="Enter your phone"
           autoCapitalize='none'
           autoCorrect={false}
           value={userPhone}
-          onChangeText={(newValue) => setUserPhone(newValue)}
+          onChangeText={setUserPhone}
         />
         <Button
           title='Join to loyalty program'
           color='#09b83e'
+          onPress={() => {
+            singUpNewUser({userName, userPhone});
+            setUserName('');
+            setUserPhone('');
+          }}
         />
       </View>
     </View>
@@ -63,7 +62,7 @@ const styles = StyleSheet.create({
   },
   newUserScreenIcon: {
     fontSize: 150,
-    color: '#09b83e',
+    color: '#09b83e'
   },
   newUserScreenInput: {
     marginBottom: 10,

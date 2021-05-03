@@ -66,9 +66,6 @@ const getToken = dispatch => {
       console.log(error.message, 'Error when getting short-token: ', error.config);
       dispatch({type: 'add_error', payload: 'Something went wrong with getting token from Instagram'})
     };
-    // modify our state
-
-    // handle error
   }
 }
 
@@ -81,8 +78,19 @@ const getTokenFromStorage = dispatch => {
   }
 }
 
+const singUpNewUser = dispatch => {
+  return async({userName, userPhone}) => {
+    try {
+      // const response = await axios.post();
+      console.log("Sending data about New User: ", userName, userPhone);
+    } catch (error) {
+      console.log("Error when sending data about New User: ", error.message, error.config)
+    }
+  }
+}
+
 export const {Provider, Context} = createDataContext(
   tokenReducer,
-  {getToken, getTokenFromStorage},
+  {getToken, getTokenFromStorage, singUpNewUser},
   {token: null, errorMessage: ''}
 );
