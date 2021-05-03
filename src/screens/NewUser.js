@@ -8,13 +8,13 @@ export default function NewUser ({navigation: {navigate}}) {
   const [userPhone, setUserPhone] = useState('');
   const { getTokenFromStorage } = useContext(TokenContext);
   
-  useEffect(() => {
-      setTimeout(() => {
-        if(userName.length === 0 || userPhone.length === 0) {
-          navigate('InstagramFeed', {token: getTokenFromStorage});
-        }
-      }, 60000)  
-  }, [])
+  // useEffect(() => {
+  //     setTimeout(() => {
+  //       if(userName.length === 0 || userPhone.length === 0) {
+  //         navigate('InstagramFeed', {token: getTokenFromStorage});
+  //       }
+  //     }, 60000)  
+  // }, [])
 
   return(
     <View style={styles.newUserScreenContainer}>

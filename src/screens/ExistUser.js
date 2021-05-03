@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {Context as TokenContext} from '../context/TokenContext';
 
 
-export default function ExistUser ({navigation: {navigate}}) {
+export default function ExistUser ({navigation: {navigate}, route}) {
   const { getTokenFromStorage } = useContext(TokenContext);
 
   useEffect(() => {
@@ -13,10 +13,14 @@ export default function ExistUser ({navigation: {navigate}}) {
     }, 20000)
   }, [])
 
+  const userName = route.params.username;
+  const pointsStr = route.params.points;
+  const points = pointsStr.replace(/\//g,'');
+
   return(
     <View style={styles.newExistScreenContainer}>
-      <Text style={styles.newExistScreenText} >Congrats Olga</Text>
-      <Text style={styles.newExistScreenText}>We increased your balance points with 100 points</Text>
+      <Text style={styles.newExistScreenText} >Congrats {userName}</Text>
+      <Text style={styles.newExistScreenText}>We increased your balance points with {points} points</Text>
       <Icon name="gift" style={styles.newExistScreenIcon}/>
     </View>
   )
