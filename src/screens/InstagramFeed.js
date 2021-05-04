@@ -109,7 +109,7 @@ export default function InstagramFeed ({route}) {
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
-          onMomentumScrollEnd={countCurrentIndex}
+          onMomentumScrollEnd={() => countCurrentIndex}
           ref={scrollRef}
         >
           {data.map(item => {
