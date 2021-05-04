@@ -3,6 +3,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as TokenProvider } from './src/context/TokenContext';
+import { Provider as LanguageProvider } from './src/context/TokenContext';
 
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
@@ -54,8 +55,11 @@ const App = () => {
 
 export default () => {
   return(
-    <TokenProvider>
-      <App />
-    </TokenProvider>
+    <LanguageProvider>
+      <TokenProvider>
+        <App />
+      </TokenProvider>
+    </LanguageProvider>
+    
   )
 };

@@ -12,5 +12,8 @@
   "ExistUser" : "Bestaan gebruiker",
   "Congrats" : "Gefeliciteerd",
   "Increase Points" : "We hebben uw balanspunten verhoogd met",
-  "Points" : "punten"
+  "Points" : "punten",
+  "English" : "Engels",
+  "French" : "Frans",
+  "Dutch": "Nederlands"
 }

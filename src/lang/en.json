@@ -12,5 +12,8 @@
   "ExistUser" : "Exist User",
   "Congrats" : "Congrats",
   "Increase Points" : "We increased your balance points with",
-  "Points" : "points"
+  "Points" : "points",
+  "English" : "English",
+  "French" : "French",
+  "Dutch": "Dutch"
 }
