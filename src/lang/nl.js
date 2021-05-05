@@ -1,7 +1,7 @@
 export default {
   home : "Start",
   getMyFeedFromInstagram : "Ontvang mijn feed van Instagram",
-  getTokenScreen : "Ontvang Token Scherm",
+  getTokenScreen : "Ontvang mijn token",
   dataUploading : "Data uploaden",
   instagramFeed : "Instagram feed",
   phraseToJoinLoyalty : "Wilt u deelnemen aan ons loyaliteitsprogramma?",

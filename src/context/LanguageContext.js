@@ -1,4 +1,8 @@
 import createDataContext from './createDataContext';
+import LocalizedStrings from 'react-native-localization';
+import english from '../lang/en';
+import french from '../lang/fr';
+import dutch from '../lang/nl';
 
 const languageReducer = (state, action) => {
   switch(action.type) {
@@ -16,26 +20,21 @@ const languageReducer = (state, action) => {
   }
 };
 
-const switchToEnglish = dispatch => {
-  return() => {
-    dispatch({type: 'en', payload: 'en'})
-  }
-}
+export const strings = new LocalizedStrings({
+  en: english,
+  fr: french,
+  nl: dutch,
+ });
 
-const switchToFrench = dispatch => {
-  return() => {
-    dispatch({type: 'fr', payload: 'fr'})
-  }
-}
-
-const switchToDutch = dispatch => {
-  return() => {
-    dispatch({type: 'nl', payload: 'nl'})
+const switchLanguage = dispatch => {
+  return(languageKey) => {
+    strings.setLanguage(languageKey)
+    dispatch({type: languageKey, payload: languageKey})
   }
 }
 
 export const {Povider, Context } = createDataContext(
   languageReducer,
-  {switchToEnglish, switchToFrench, switchToDutch},
+  {switchLanguage},
   {lang: 'en'}
 )
