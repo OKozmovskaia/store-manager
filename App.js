@@ -3,7 +3,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as TokenProvider } from './src/context/TokenContext';
-import { Provider as LanguageProvider } from './src/context/TokenContext';
+import { Provider as LanguageProvider } from './src/context/LanguageContext';
 
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
