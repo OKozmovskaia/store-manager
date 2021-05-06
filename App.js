@@ -14,8 +14,32 @@ import GetTokenScreen from './src/screens/GetTokenScreen';
 import InstagramFeed from './src/screens/InstagramFeed';
 import NewUser from './src/screens/NewUser';
 import ExistUser from './src/screens/ExistUser';
+import LanguageScreen from './src/screens/LanguageScreen';
 
-const Stack = createStackNavigator();
+const MainStack = createStackNavigator();
+const RootStack = createStackNavigator();
+
+function MainStackScreen({navigation}) {
+  return(
+    <MainStack.Navigator
+    screenOptions= {{
+      headerRight: () => (
+        <Icon
+          name='language'
+          size={50}
+          onPress={() => navigation.navigate('MyModal')}
+        />
+      )
+    }}
+  >
+      <MainStack.Screen name="Home" component={InstagramAuth} />
+      <MainStack.Screen name="GetTokenScreen" component={GetTokenScreen} />
+      <MainStack.Screen name="InstagramFeed" component={InstagramFeed} />
+      <MainStack.Screen name="NewUser" component={NewUser} />
+      <MainStack.Screen name="ExistUser" component={ExistUser} />
+  </MainStack.Navigator>
+  ); 
+}
 
 const App = () => {
 
@@ -45,25 +69,10 @@ const App = () => {
 
   return (
     <NavigationContainer linking={linking}>
-      <Stack.Navigator
-        screenOptions= {{
-          headerRight: () => (
-            <Icon
-              name='language'
-              size={50}
-            />
-          )
-        }}
-      >
-        <Stack.Screen
-          name="Home" 
-          component={InstagramAuth}
-        />
-        <Stack.Screen name="GetTokenScreen" component={GetTokenScreen} />
-        <Stack.Screen name="InstagramFeed" component={InstagramFeed} />
-        <Stack.Screen name="NewUser" component={NewUser} />
-        <Stack.Screen name="ExistUser" component={ExistUser} />
-      </Stack.Navigator>
+      <RootStack.Navigator mode="modal" headerMode="none">
+        <RootStack.Screen name="Main" component={MainStackScreen} />
+        <RootStack.Screen name="MyModal" component={LanguageScreen} />
+      </RootStack.Navigator>
     </NavigationContainer>
   );
 }
