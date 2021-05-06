@@ -1,7 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { Alert, TouchableOpacity } from 'react-native';
-import { FontAwesome } from 'react-native-vector-icons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 // libraries and Context
 import { NavigationContainer } from '@react-navigation/native';
@@ -46,21 +45,19 @@ const App = () => {
 
   return (
     <NavigationContainer linking={linking}>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions= {{
+          headerRight: () => (
+            <Icon
+              name='language'
+              size={50}
+            />
+          )
+        }}
+      >
         <Stack.Screen
           name="Home" 
           component={InstagramAuth}
-          options={{
-            headerRight: () => (
-              <TouchableOpacity
-                onPress={()=>Alert('Change language!')}
-              >
-                <FontAwesome
-                name="language"
-              />
-              </TouchableOpacity> 
-            ),
-          }}
         />
         <Stack.Screen name="GetTokenScreen" component={GetTokenScreen} />
         <Stack.Screen name="InstagramFeed" component={InstagramFeed} />

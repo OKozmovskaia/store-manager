@@ -20,7 +20,7 @@ const languageReducer = (state, action) => {
   }
 };
 
-export const strings = new LocalizedStrings({
+const strings = new LocalizedStrings({
   en: english,
   fr: french,
   nl: dutch,
@@ -33,7 +33,7 @@ const switchLanguage = dispatch => {
   }
 }
 
-export const {Povider, Context } = createDataContext(
+export const {Provider, Context } = createDataContext(
   languageReducer,
   {switchLanguage},
   {lang: 'en'}
