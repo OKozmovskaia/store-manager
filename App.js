@@ -6,7 +6,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as TokenProvider } from './src/context/TokenContext';
-import { Provider as LanguageProvider } from './src/context/LanguageContext';
 
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
@@ -79,11 +78,8 @@ const App = () => {
 
 export default () => {
   return(
-    <LanguageProvider>
       <TokenProvider>
         <App />
       </TokenProvider>
-    </LanguageProvider>
-    
   )
 };
