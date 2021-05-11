@@ -1,4 +1,4 @@
-export default {
+export const TRANSLATIONS_FR = {
   home : "À l'accueil",
   getMyFeedFromInstagram : "Obtenir mon feed Instagram",
   getTokenScreen : "Obtenir Token l'écran",
