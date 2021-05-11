@@ -4,11 +4,9 @@ import { ListItem } from 'react-native-elements';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const langs = ['en', 'fr', 'nl'];
-const defaultLang = 'en';
-
 
 export default function LanguageScreen() {
-  const [lang, changeLang] = useState(defaultLang);
+  const [lang, changeLang] = useState('en');
   const insets = useSafeAreaInsets();
   
   return (
