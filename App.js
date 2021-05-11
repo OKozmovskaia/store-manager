@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as TokenProvider } from './src/context/TokenContext';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { LocalizationProvider } from './src/components/Translations';
 
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
@@ -70,10 +71,12 @@ const App = () => {
   return (
     <NavigationContainer linking={linking}>
       <SafeAreaProvider>
-        <RootStack.Navigator mode="modal" headerMode="none">
-          <RootStack.Screen name="Main" component={MainStackScreen} />
-          <RootStack.Screen name="MyModal" component={LanguageScreen} />
-        </RootStack.Navigator>
+        <LocalizationProvider>
+          <RootStack.Navigator mode="modal" headerMode="none">
+            <RootStack.Screen name="Main" component={MainStackScreen} />
+            <RootStack.Screen name="MyModal" component={LanguageScreen} />
+          </RootStack.Navigator>
+        </LocalizationProvider>
       </SafeAreaProvider>
     </NavigationContainer>
   );
