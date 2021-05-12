@@ -1,35 +1,41 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { View } from 'react-native';
 import { ListItem, Text } from 'react-native-elements';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
-
-const langs = ['en', 'fr', 'nl'];
+import { LocalizationContext } from '../components/Translations';
 
 export default function LanguageScreen({navigation}) {
-  const [lang, changeLang] = useState('en');
   const insets = useSafeAreaInsets();
+  const {
+    translations,
+    appLanguage,
+    setAppLanguage,
+    initializeAppLanguage
+  } = useContext(LocalizationContext);
+
+  initializeAppLanguage();
   
   return (
     <View>
       <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-        <Text h1>Language Screen:</Text>
+        <Text h1>{translations['changeLanguage']}</Text>
         <Icon 
           name="times"
           onPress={() => navigation.goBack()}
           size={40}
         />
       </View>
-      {langs.map((currentLang, i) => (
-        <ListItem key={i} onPress={() => changeLang(currentLang)} bottomDivider>
+      {translations.getAvailableLanguages().map((currentLang, i) => (
+        <ListItem key={i} onPress={() => setAppLanguage(currentLang)} bottomDivider>
           <ListItem.Content>
             <ListItem.Title h4>{currentLang}</ListItem.Title> 
           </ListItem.Content>
           <ListItem.CheckBox
-            checked={currentLang === lang}
+            checked={currentLang === appLanguage}
             checkedIcon='check'
             uncheckedIcon='check'
-            uncheckedColor='#fff'
+            uncheckedColor='#fff' 
           />
         </ListItem>
       ))}

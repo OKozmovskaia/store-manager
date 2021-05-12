@@ -22,7 +22,7 @@ const RootStack = createStackNavigator();
 
 function MainStackScreen({navigation}) {
   return(
-    <MainStack.Navigator
+  <MainStack.Navigator
     screenOptions= {{
       headerRight: () => (
         <Icon
