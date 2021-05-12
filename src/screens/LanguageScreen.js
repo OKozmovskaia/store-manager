@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { View } from 'react-native';
+import { ListItem, Text } from 'react-native-elements';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const langs = ['en', 'fr', 'nl'];
 
-export default function LanguageScreen() {
+export default function LanguageScreen({navigation}) {
   const [lang, changeLang] = useState('en');
   const insets = useSafeAreaInsets();
   
   return (
     <View>
-      <Text>Language Screen:</Text>
+      <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+        <Text h1>Language Screen:</Text>
+        <Icon 
+          name="times"
+          onPress={() => navigation.goBack()}
+          size={40}
+        />
+      </View>
       {langs.map((currentLang, i) => (
         <ListItem key={i} onPress={() => changeLang(currentLang)} bottomDivider>
           <ListItem.Content>
