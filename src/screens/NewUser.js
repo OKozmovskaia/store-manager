@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
+import { View, Text, Button, TextInput, StyleSheet, Modal } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Context as TokenContext} from '../context/TokenContext';
 import { LocalizationContext } from '../components/Translations';
@@ -8,6 +8,7 @@ import { LocalizationContext } from '../components/Translations';
 export default function NewUser ({navigation: {navigate}}) {
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
+  const [modalVisible, setModalVisible] = useState(false); 
   const {singUpNewUser} = useContext(TokenContext);
   const {translations, initializeAppLanguage} = useContext(LocalizationContext);
 
@@ -20,6 +21,17 @@ export default function NewUser ({navigation: {navigate}}) {
 
   return(
     <View style={styles.newUserScreenContainer}>
+      <Modal
+        animationType="slide"
+        visible={modalVisible}
+        onRequestClose={() => {
+          setModalVisible(!modalVisible);
+        }}
+      >
+        <View style={styles.modalView}>
+            <Text style={styles.newUserScreenText}>{translations['thanksForJoin']}</Text>
+        </View>
+      </Modal>
       <Text
       style={styles.newUserScreenText}
       >{translations['phraseToJoinLoyalty']}</Text>
@@ -51,6 +63,7 @@ export default function NewUser ({navigation: {navigate}}) {
             singUpNewUser({userName, userPhone});
             setUserName('');
             setUserPhone('');
+            setModalVisible(true);
             setTimeout(()=> {
               redirectToFeed();
             }, 5000);
@@ -84,5 +97,20 @@ const styles = StyleSheet.create({
     borderColor: '#a9a9a9',
     borderRadius: 5,
     borderWidth: 1
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 35,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5
   }
 })
