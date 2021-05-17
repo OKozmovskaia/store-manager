@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
-import * as React from 'react';
+import React, { useContext } from 'react';
+import { Text } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 // libraries and Context
@@ -7,7 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Provider as TokenProvider } from './src/context/TokenContext';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { LocalizationProvider } from './src/components/Translations';
+import { LocalizationProvider, LocalizationContext } from './src/components/Translations';
 
 // screens
 import InstagramAuth from './src/screens/InstagramAuth';
@@ -21,6 +22,9 @@ const MainStack = createStackNavigator();
 const RootStack = createStackNavigator();
 
 function MainStackScreen({navigation}) {
+  const {translations, initializeAppLanguage} = useContext(LocalizationContext);
+  initializeAppLanguage();
+  
   return(
   <MainStack.Navigator
     screenOptions= {{
@@ -33,11 +37,11 @@ function MainStackScreen({navigation}) {
       )
     }}
   >
-      <MainStack.Screen name="Home" component={InstagramAuth} />
-      <MainStack.Screen name="GetTokenScreen" component={GetTokenScreen} />
-      <MainStack.Screen name="InstagramFeed" component={InstagramFeed} />
-      <MainStack.Screen name="NewUser" component={NewUser} />
-      <MainStack.Screen name="ExistUser" component={ExistUser} />
+      <MainStack.Screen name="Home" component={InstagramAuth} options={{ title: translations['home'] }}/>
+      <MainStack.Screen name="GetTokenScreen" component={GetTokenScreen} options={{ title: translations['getTokenScreen'] }}/>
+      <MainStack.Screen name="InstagramFeed" component={InstagramFeed} options={{ title: translations['instagramFeed'] }}/>
+      <MainStack.Screen name="NewUser" component={NewUser} options={{ title: translations['newUser'] }}/>
+      <MainStack.Screen name="ExistUser" component={ExistUser} options={{ title: translations['existUser'] }}/>
   </MainStack.Navigator>
   ); 
 }
@@ -47,29 +51,42 @@ const App = () => {
   const linking = {
     prefixes: ['storemanager://'],
     config:{
-      initialRouteName: 'Home',
       screens: {
-        Home:{
-          path: 'home'
+        Main: {
+          initialRouteName: 'Home',
+          screens: {
+            Home:{
+              path: 'home'
+            },
+            GetTokenScreen: {
+              path: 'feed'
+            },
+            InstagramFeed: {
+              path: 'instagram'
+            },
+            NewUser: {
+              path: 'new-user'
+            },
+            ExistUser: {
+              path: 'exist-user'
+            },
+            NotFound: '*'
+          }
         },
-        GetTokenScreen: {
-          path: 'feed'
-        },
-        InstagramFeed: {
-          path: 'instagram'
-        },
-        NewUser: {
-          path: 'new-user'
-        },
-        ExistUser: {
-          path: 'exist-user'
+        MyModal: {
+          screens: {
+            LanguageScreen:{
+              path: 'change-language'
+            }
+          }
         }
+
       }
     }  
   }
 
   return (
-    <NavigationContainer linking={linking}>
+    <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
       <SafeAreaProvider>
         <LocalizationProvider>
           <RootStack.Navigator mode="modal" headerMode="none">

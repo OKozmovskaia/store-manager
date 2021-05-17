@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { View, Text, Linking, StyleSheet, Button} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { LocalizationContext } from '../components/Translations';
 
 import config from '../../config.json';
 
 export default function InstagramAuth({navigation: {navigate}}) {
   const insets = useSafeAreaInsets();
+  const {translations, initializeAppLanguage} = useContext(LocalizationContext);
+  initializeAppLanguage();
   
   const enteredURL = `https://www.instagram.com/oauth/authorize?client_id=${config.ID_BUSINESS_ACCOUNT_INSTAGRAM}&redirect_uri=${config.REDIRECT_URL}&scope=user_profile,user_media&response_type=code`;
 
@@ -22,10 +25,9 @@ export default function InstagramAuth({navigation: {navigate}}) {
         style={styles.instagramAuthButton}
       >
         <Text style={styles.instagramAuthText}>
-          Get my feed from Instagram
+          {translations['getMyFeedFromInstagram']}
         </Text>
       </Icon.Button>
-    <Button title='to New User Screen' onPress={() => navigate('NewUser')} />
     </View>
   );
 }
