@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { View } from 'react-native';
 import { ListItem, Text } from 'react-native-elements';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -14,7 +14,9 @@ export default function LanguageScreen({navigation}) {
     initializeAppLanguage
   } = useContext(LocalizationContext);
 
-  initializeAppLanguage();
+  useEffect(() => {
+    initializeAppLanguage();
+  },[]);
   
   return (
     <View>

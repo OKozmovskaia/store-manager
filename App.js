@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Text } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -23,8 +23,10 @@ const RootStack = createStackNavigator();
 
 function MainStackScreen({navigation}) {
   const {translations, initializeAppLanguage} = useContext(LocalizationContext);
-  initializeAppLanguage();
-  
+  useEffect(() => {
+    initializeAppLanguage();
+  },[]);
+
   return(
   <MainStack.Navigator
     screenOptions= {{

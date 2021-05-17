@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, Button, TextInput, StyleSheet, Modal } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -17,7 +17,9 @@ export default function NewUser ({navigation: {navigate}}) {
     navigate('InstagramFeed', { token: token});
   };
 
-  initializeAppLanguage();
+  useEffect(() => {
+    initializeAppLanguage();
+  },[]);
 
   return(
     <View style={styles.newUserScreenContainer}>

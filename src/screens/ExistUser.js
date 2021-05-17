@@ -18,7 +18,9 @@ export default function ExistUser ({navigation: {navigate}, route}) {
     }, 5000)        
   }, []);
 
-  initializeAppLanguage();
+  useEffect(() => {
+    initializeAppLanguage();
+  },[]);
 
   const userName = route.params.username;
   const pointsStr = route.params.points;
