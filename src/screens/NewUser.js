@@ -3,28 +3,32 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Context as TokenContext} from '../context/TokenContext';
+import { LocalizationContext } from '../components/Translations';
 
 export default function NewUser ({navigation: {navigate}}) {
   const [userName, setUserName] = useState('');
   const [userPhone, setUserPhone] = useState('');
   const {singUpNewUser} = useContext(TokenContext);
+  const {translations, initializeAppLanguage} = useContext(LocalizationContext);
 
   const redirectToFeed = async() => {
     const token = await AsyncStorage.getItem('token');
     navigate('InstagramFeed', { token: token});
   };
 
+  initializeAppLanguage();
+
   return(
     <View style={styles.newUserScreenContainer}>
       <Text
       style={styles.newUserScreenText}
-      >Would you like to join to our loyalty program?</Text>
+      >{translations['phraseToJoinLoyalty']}</Text>
       <Icon name="gift" style={styles.newUserScreenIcon}/>
       <View>
         <TextInput
           label='Name'
           style={styles.newUserScreenInput}
-          placeholder="Enter your name"
+          placeholder={translations['enterYourName']}
           autoCapitalize='none'
           autoCorrect={false}
           value={userName}
@@ -34,14 +38,14 @@ export default function NewUser ({navigation: {navigate}}) {
           label='Phone'
           style={styles.newUserScreenInput}
           keyboardType="phone-pad"
-          placeholder="Enter your phone"
+          placeholder={translations['enterYourName']}
           autoCapitalize='none'
           autoCorrect={false}
           value={userPhone}
           onChangeText={setUserPhone}
         />
         <Button
-          title='Join to loyalty program'
+          title={translations['joinToLoyaltyProgram']}
           color='#09b83e'
           onPress={() => {
             singUpNewUser({userName, userPhone});

@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { LocalizationContext } from '../components/Translations';
 
 export default function ExistUser ({navigation: {navigate}, route}) {
-
+  const {translations, initializeAppLanguage} = useContext(LocalizationContext);
+  
   useEffect(() => {
     const redirectToFeed = async() => {
       const token = await AsyncStorage.getItem('token');
@@ -16,14 +18,16 @@ export default function ExistUser ({navigation: {navigate}, route}) {
     }, 5000)        
   }, []);
 
+  initializeAppLanguage();
+
   const userName = route.params.username;
   const pointsStr = route.params.points;
   const points = pointsStr.replace(/\//g,'');
 
   return(
     <View style={styles.newExistScreenContainer}>
-      <Text style={styles.newExistScreenText} >Congrats {userName}</Text>
-      <Text style={styles.newExistScreenText}>We increased your balance points with {points} points</Text>
+      <Text style={styles.newExistScreenText} >{translations['congrats']} {userName}</Text>
+      <Text style={styles.newExistScreenText}>{translations['increasePoints']} {points} {translations['points']}</Text>
       <Icon name="gift" style={styles.newExistScreenIcon}/>
     </View>
   )

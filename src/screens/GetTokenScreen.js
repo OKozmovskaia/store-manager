@@ -3,7 +3,6 @@ import { View, Text, StyleSheet } from 'react-native';
 import {Context as TokenContext} from '../context/TokenContext';
 
 export default function GetTokenScreen ({navigation: {navigate}, route}) {
-
   const {state, getToken} = useContext(TokenContext);
 
   useEffect(() => {
