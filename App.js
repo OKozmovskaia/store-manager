@@ -88,16 +88,16 @@ const App = () => {
   }
 
   return (
-    <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
-      <SafeAreaProvider>
-        <LocalizationProvider>
+    <SafeAreaProvider>
+      <LocalizationProvider>
+        <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
           <RootStack.Navigator mode="modal" headerMode="none">
             <RootStack.Screen name="Main" component={MainStackScreen} />
             <RootStack.Screen name="MyModal" component={LanguageScreen} />
           </RootStack.Navigator>
-        </LocalizationProvider>
-      </SafeAreaProvider>
-    </NavigationContainer>
+        </NavigationContainer>
+      </LocalizationProvider>
+    </SafeAreaProvider>
   );
 }
 
