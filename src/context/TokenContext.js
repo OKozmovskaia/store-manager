@@ -72,8 +72,43 @@ const getToken = dispatch => {
 const singUpNewUser = dispatch => {
   return async({userName, userPhone}) => {
     try {
-      // const response = await axios.post();
-      console.log("Sending data about New User: ", userName, userPhone);
+
+      const tokenFromServer = await axios({
+        method: 'GET',
+        url: `${configData.REDIRECT_URL}get-token`,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        data: {
+          "client_id": configData.CLIENT_ID_SERVER,
+          "client_secret": configData.CLIENT_SECRET_SERVER
+        }
+      });
+
+      const saveNewUser = async(token) => {
+        try {
+          const response = await axios({
+            method: 'POST',
+            url: `${configData.REDIRECT_URL}add-user`,
+            headers: {
+              "Content-Type":"application/json",
+              "Authorization" :`Bearer ${token}`
+            },
+            data: {
+              "name": userName,
+              "phone": userPhone
+            }
+          });
+          console.log(response);
+          return;
+          
+        } catch (error) {
+          console.log("Error when saving New User in DB: ", error.message, error.config)
+        }
+      };
+
+      saveNewUser(tokenFromServer.data.token);
+      
     } catch (error) {
       console.log("Error when sending data about New User: ", error.message, error.config)
     }

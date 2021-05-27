@@ -1,5 +1,7 @@
 {
   "ID_BUSINESS_ACCOUNT_INSTAGRAM": "472382833983819",
   "APP_SECRET": "d4c21ff533f0227204c0fb230755b0cb",
-  "REDIRECT_URL": "https://redirect-site-store-manager.herokuapp.com/"
+  "REDIRECT_URL": "https://redirect-site-store-manager.herokuapp.com/",
+  "CLIENT_ID_SERVER" : "60658831ed953f4b04d2ad15",
+  "CLIENT_SECRET_SERVER" : "OIKNvQowzsE0dd0RWr7lglLBP57oVUq6hU9tUQ1Y"
 }
