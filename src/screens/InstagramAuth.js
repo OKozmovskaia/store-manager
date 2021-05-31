@@ -25,6 +25,7 @@ export default function InstagramAuth({navigation: {navigate}}) {
         name="instagram"
         onPress={instagramEnteredLink}
         style={styles.instagramAuthButton}
+        size={30}
       >
         <Text style={styles.instagramAuthText}>
           {translations['getMyFeedFromInstagram']}
@@ -42,14 +43,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   instagramAuthButton: {
-    borderRadius: 6,
-    backgroundColor: "#0084ff",
+    backgroundColor: "#49ADB3",
+    padding: 20
   },
   instagramAuthText: {
     textAlign: "center",
     paddingHorizontal: 8,
-    fontSize: 22,
+    fontSize: 25,
     color: "#fff",
-    fontWeight: "bold"
+    fontFamily: 'Open Sans'
   }
 })
