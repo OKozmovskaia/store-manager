@@ -41,16 +41,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     paddingHorizontal: 20,
-    fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 45,
+    fontFamily: 'Open Sans'
   },
   newExistScreenText: {
-    fontWeight: 'bold',
-    fontSize: 30,
-    textAlign: 'center'
+    fontSize: 40,
+    textAlign: 'center',
+    fontFamily: 'Open Sans'
   },
   newExistScreenIcon: {
     fontSize: 150,
-    color: '#09b83e',
+    color: '#49ADB3',
   }
 })
