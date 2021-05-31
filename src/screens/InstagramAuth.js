@@ -6,7 +6,7 @@ import { LocalizationContext } from '../components/Translations';
 
 import config from '../../config.json';
 
-export default function InstagramAuth({navigation: {navigate}}) {
+export default function InstagramAuth() {
   const insets = useSafeAreaInsets();
   const {translations, initializeAppLanguage} = useContext(LocalizationContext);
   useEffect(() => {
