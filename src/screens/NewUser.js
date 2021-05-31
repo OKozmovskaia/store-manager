@@ -75,7 +75,7 @@ export default function NewUser ({navigation: {navigate}}) {
         />
         <Button
           title={translations['joinToLoyaltyProgram']}
-          color='#09b83e'
+          color='#49ADB3'
           onPress={() => {
             singUpNewUser({userName, userPhone});
             setUserName('');
@@ -99,27 +99,28 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20
   },
   newUserScreenText: {
-    fontWeight: 'bold',
-    fontSize: 30,
-    textAlign: 'center'
+    fontSize: 40,
+    textAlign: 'center',
+    fontFamily: 'Open Sans'
   },
   newUserScreenIcon: {
     fontSize: 150,
-    color: '#09b83e'
+    color: '#49ADB3'
   },
   newUserScreenInput: {
     marginBottom: 10,
     paddingHorizontal: 10,
     width: 300,
-    borderColor: '#a9a9a9',
-    borderRadius: 5,
-    borderWidth: 1
+    borderColor: '#A5B9D9',
+    borderWidth: 2
   },
   modalView: {
+    flex: 1,
     margin: 20,
     backgroundColor: "white",
-    borderRadius: 20,
+    borderRadius: 5,
     padding: 35,
+    justifyContent: 'center',
     alignItems: "center",
     shadowColor: "#000",
     shadowOffset: {
