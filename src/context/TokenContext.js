@@ -99,9 +99,9 @@ const singUpNewUser = dispatch => {
               "phone": userPhone
             }
           });
-          console.log(response);
+          // console.log(response);
           return;
-          
+
         } catch (error) {
           console.log("Error when saving New User in DB: ", error.message, error.config)
         }

@@ -12,14 +12,28 @@ export default function NewUser ({navigation: {navigate}}) {
   const {singUpNewUser} = useContext(TokenContext);
   const {translations, initializeAppLanguage} = useContext(LocalizationContext);
 
+  useEffect(() => {
+    initializeAppLanguage();
+  },[]);
+
   const redirectToFeed = async() => {
     const token = await AsyncStorage.getItem('token');
     navigate('InstagramFeed', { token: token});
   };
 
-  useEffect(() => {
-    initializeAppLanguage();
-  },[]);
+  const normalizePhone = (value, previousValue) => {
+    if (!value) return value;
+    const currentValue = value.replace(/[^\d]/g, '');
+    const cvLength = currentValue.length;
+    
+    if (!previousValue || value.length > previousValue.length) {
+      if (cvLength < 3) return currentValue;
+      if (cvLength < 6) return `${currentValue.slice(0, 2)} ${currentValue.slice(2)}`;
+      if (cvLength < 8) return `${currentValue.slice(0, 2)} ${currentValue.slice(2, 5)} ${currentValue.slice(5)}`;
+      if (cvLength < 10) return `${currentValue.slice(0, 2)} ${currentValue.slice(2, 5)} ${currentValue.slice(5, 7)} ${currentValue.slice(7)}`;
+      return `${currentValue.slice(0, 2)} ${currentValue.slice(2, 5)} ${currentValue.slice(5, 7)}-${currentValue.slice(7, 9)}-${currentValue.slice(9, 11)}`;
+    }
+  };
 
   return(
     <View style={styles.newUserScreenContainer}>
@@ -52,11 +66,12 @@ export default function NewUser ({navigation: {navigate}}) {
           label='Phone'
           style={styles.newUserScreenInput}
           keyboardType="phone-pad"
-          placeholder={translations['enterYourName']}
+          placeholder={translations['enterYourPhone']}
           autoCapitalize='none'
           autoCorrect={false}
+          maxLength={15}
           value={userPhone}
-          onChangeText={setUserPhone}
+          onChangeText={value => {setUserPhone(prevState => normalizePhone(value, prevState))}}
         />
         <Button
           title={translations['joinToLoyaltyProgram']}
