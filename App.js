@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import React, { useEffect, useContext } from 'react';
 import { Text } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { LogBox } from 'react-native';
 
 // libraries and Context
 import { NavigationContainer } from '@react-navigation/native';
@@ -18,6 +19,12 @@ import NewUser from './src/screens/NewUser';
 import ExistUser from './src/screens/ExistUser';
 import LanguageScreen from './src/screens/LanguageScreen';
 
+// Ignore log notification by message
+LogBox.ignoreLogs(['Warning: ...']);
+
+//Ignore all log notifications
+LogBox.ignoreAllLogs();
+
 const MainStack = createStackNavigator();
 const RootStack = createStackNavigator();
 
@@ -30,11 +37,22 @@ function MainStackScreen({navigation}) {
   return(
   <MainStack.Navigator
     screenOptions= {{
+      headerStyle: {
+        backgroundColor: '#49ADB3'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 30,
+        fontFamily: 'Open Sans'
+      },
       headerRight: () => (
         <Icon
           name='language'
-          size={50}
+          size={45}
           onPress={() => navigation.navigate('MyModal')}
+          color='#fff'
+          style={{paddingHorizontal: 10}}
         />
       )
     }}
